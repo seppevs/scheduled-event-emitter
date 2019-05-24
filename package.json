@@ -1,0 +1,68 @@
+{
+  "name": "scheduled-event-emitter",
+  "version": "0.0.1",
+  "description": "Schedule events to be emitted in the future",
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seppevs/scheduled-event-emitter.git"
+  },
+  "main": "src/ScheduledEventEmitter.js",
+  "scripts": {
+    "test": "jest --silent --coverage",
+    "coveralls": "jest --silent --coverage --coverageReporters=text-lcov | coveralls",
+    "lint": "eslint --cache --fix src/ test/"
+  },
+  "keywords": [
+    "eventemitter",
+    "schedule",
+    "scheduled",
+    "date",
+    "delay",
+    "delayed"
+  ],
+  "author": "Sebastian Van Sande",
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "jest": "^24.5.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules/",
+      "test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
