@@ -26,11 +26,11 @@
   "author": "Sebastian Van Sande",
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "^3.0.6",
+    "coveralls": "^3.0.7",
     "jest": "^24.9.0",
-    "eslint": "^6.2.2",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-import": "^2.18.2"
   },
   "eslintConfig": {
