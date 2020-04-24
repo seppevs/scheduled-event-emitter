@@ -1,6 +1,6 @@
 {
   "name": "scheduled-event-emitter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Schedule events to be emitted in the future",
   "engines": {
     "node": ">=8"
